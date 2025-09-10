@@ -36,7 +36,7 @@ This repository collects proof-of-concept (PoC) implementations for several vuln
    ```
 4. Repeat the above steps for other PoC directories as needed.
 
-## 注意事项
+## Warnings
 
 - For research and educational purposes only. Do not run on production systems or unauthorized devices.
 - Some PoCs may require root privileges or specific hardware support.
